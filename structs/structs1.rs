@@ -3,15 +3,11 @@
 
 
 struct ColorClassicStruct {
-    // TODO: Something goes here
     name: String,
     hex: String,
 }
 
-struct ColorTupleStruct(/* TODO: Something goes here */
-  String,
-  String,  
-);
+struct ColorTupleStruct(String, String);
 
 #[derive(Debug)]
 struct UnitStruct;
@@ -22,7 +18,6 @@ mod tests {
 
     #[test]
     fn classic_c_structs() {
-        // TODO: Instantiate a classic c struct!
         let green = ColorClassicStruct {
             name : String::from("green"),
             hex : String::from("#00FF00"),
@@ -34,7 +29,6 @@ mod tests {
 
     #[test]
     fn tuple_structs() {
-        // TODO: Instantiate a tuple struct!
         let green = ColorTupleStruct(String::from("green"), String::from("#00FF00"));
 
         assert_eq!(green.0, "green");
@@ -43,7 +37,6 @@ mod tests {
 
     #[test]
     fn unit_structs() {
-        // TODO: Instantiate a unit struct!
         let unit_struct = UnitStruct;
         let message = format!("{:?}s are fun!", unit_struct);
 
