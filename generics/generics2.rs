@@ -22,7 +22,6 @@ mod tests {
 
     #[test]
     fn store_str_in_wrapper() {
-        // TODO: Delete this assert and uncomment the one  below once you have  finished the exercise.
         assert_eq!(Wrapper::new("Foo").value, "Foo");
     }
 }
